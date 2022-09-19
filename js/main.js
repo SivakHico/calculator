@@ -6,9 +6,11 @@
  * - equals: returns the value (thanks to an 'eval' function)
  * - clear: clears the history
  */
+const calculator = new Calculator();
 
 const calculatorScreen = document.querySelector("#calculator .screen");
 const equals = document.querySelector("#calculator .eval");
+equals.addEventListener("click", calculator.equals);
 
 /**
  * This function below write the value of the pressed key on the screen
